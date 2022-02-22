@@ -1,0 +1,16 @@
+CREATE DATABASE commodity collate `utf8_general_ci`;
+use commodity;
+create table `products`(
+    id int auto_increment primary key,
+    name varchar(255),
+    sectors varchar(255),
+    price float,
+    amount int,
+    datecreated date,
+    description varchar(255)
+
+);
+insert into products(name,sectors,price,amount,datecreated,description) values ('Iphone X','Điện thoại',2300000,12,'2010-2-10','Điện thoại xịn');
+insert into products(name,sectors,price,amount,datecreated,description) values ('Sam sung Galaxy S7','Điện thoại',2600000,12,'2011-8-10','Điện thoại hãng sam sung');
+insert into products(name,sectors,price,amount,datecreated,description) values ('Daiki Inverter','Điều hòa',9300000,12,'2018-7-10','Điều hòa mát lạnh');
+insert into products(name,sectors,price,amount,datecreated,description) values ('Panasonic Inverter','Tủ lạnh',2800000,1000,'2000-4-10','Tủ lạnh tốt');
