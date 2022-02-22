@@ -29,8 +29,8 @@
             <td><?php echo $product->name ?></td>
             <td><?php echo $product->sectors?></td>
             <td>
-                <a href="index.php?page=product-update&id=<?php echo $product->id?>" type="button" class="btn btn-danger">Chỉnh sửa</a>
-                <a onclick="return confirm('Bạn có muốn xóa <?php echo $product->name ?>  ')" href="index.php?page=product-delete&id=<?php echo $product->id?>" type="button" class="btn btn-success">Xóa</a>
+                <a href="index.php?page=product-update&id=<?php echo $product->id?>" type="button" class="btn btn-success">Chỉnh sửa</a>
+                <a onclick="return confirm('Bạn có muốn xóa <?php echo $product->name ?>  ')" href="index.php?page=product-delete&id=<?php echo $product->id?>" type="button" class="btn btn-danger">Xóa</a>
             </td>
         </tr>
     <?php endforeach;?>
